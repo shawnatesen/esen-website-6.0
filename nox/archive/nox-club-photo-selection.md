@@ -27,7 +27,7 @@
 | DSC01689 | [看圖](https://drive.google.com/file/d/1OVsnKMSdUyiXUuE0UbyKgQJ8b7ooij-Y/view) | 三位優雅女士背光長椅大笑——會員開心的活力 |
 | DSC01260 | [看圖](https://drive.google.com/file/d/1TV7anrKzroViZxpfcFyRa2goF6p8c5JV/view) | 白衣女士在雕塑感單椅讀 iPad、深木牆——靜奢、私人諮詢氛圍 |
 
-備選（要湊 14 或替換）：DSC09212（`1rsQyXttWxGajPZmZNqaCXIcnxuVUSRsd`，品牌背板團體照）、DSC08878（`1659V0zgAZUn1sv_rcsI3QBK5ALy4zRzz`，奶油色皮草女士獨照）。
+備選（要湊 14 或替換）：DSC09212（[看圖](https://drive.google.com/file/d/1rsQyXttWxGajPZmZNqaCXIcnxuVUSRsd/view) `1rsQyXttWxGajPZmZNqaCXIcnxuVUSRsd`，品牌背板團體照）、DSC08878（[看圖](https://drive.google.com/file/d/1659V0zgAZUn1sv_rcsI3QBK5ALy4zRzz/view) `1659V0zgAZUn1sv_rcsI3QBK5ALy4zRzz`，奶油色皮草女士獨照）。
 
 ---
 

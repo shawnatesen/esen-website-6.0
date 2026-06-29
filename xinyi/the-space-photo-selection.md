@@ -1,7 +1,7 @@
 # 伊生信義診所 — THE SPACE 照片精選（給設計師）
 
 **用途**：信義旗艦頁「THE SPACE」區塊。
-**來源**：全部取自 **Minus Plus 官方空間攝影**（`信義店空間照片｜Minus Plus / Digital / jpeg-files@0,5x(sRGB)`，folder `1xQAhhwRfBgDAH8mp3ed9JenwY4eZ1g6m`）。0.5x sRGB，web 適用；要更大可回 Print/原檔。
+**來源**：全部取自 **Minus Plus 官方空間攝影**（`信義店空間照片｜Minus Plus / Digital / jpeg-files@0,5x(sRGB)`，folder [開資料夾](https://drive.google.com/drive/folders/1xQAhhwRfBgDAH8mp3ed9JenwY4eZ1g6m) `1xQAhhwRfBgDAH8mp3ed9JenwY4eZ1g6m`）。0.5x sRGB，web 適用；要更大可回 Print/原檔。
 **檢視**：點下方連結可在 Drive 直接看圖。共檢視 31 張室內照後精選。
 
 ---

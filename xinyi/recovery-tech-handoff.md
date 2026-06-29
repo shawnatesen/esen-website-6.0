@@ -20,10 +20,10 @@
 
 | # | 卡片 | 文案（draft） | 照片 ID |
 |---|---|---|---|
-| 1 ★feature | 冷凍艙 | 全身低溫環境，幫助身體進入恢復節奏。 | `1WmnS4_owZT6qa1fDyyZF5lvyB__qbIBH` |
-| 2 | 冰浴 & 桑拿 | 冷熱交替，是常見的恢復方式之一。 | `1pJhX8kaBp0fOfTv5K2eqhG7EaJPrcKXd` |
-| 3 | 紅光療法 | 以紅光與近紅外光，溫和地陪伴恢復過程。 | `17-VWj3q_btBU-62JKyxkUZD-jAoVAPfj` |
-| 4 | 身心共振 | 透過溫和的頻率與律動，幫助身心回到放鬆的節奏。 | `1hYodITAGAI9bhxVxGRdxa3H4dc6ldTNT` |
+| 1 ★feature | 冷凍艙 | 全身低溫環境，幫助身體進入恢復節奏。 | [看圖](https://drive.google.com/file/d/1WmnS4_owZT6qa1fDyyZF5lvyB__qbIBH/view) `1WmnS4_owZT6qa1fDyyZF5lvyB__qbIBH` |
+| 2 | 冰浴 & 桑拿 | 冷熱交替，是常見的恢復方式之一。 | [看圖](https://drive.google.com/file/d/1pJhX8kaBp0fOfTv5K2eqhG7EaJPrcKXd/view) `1pJhX8kaBp0fOfTv5K2eqhG7EaJPrcKXd` |
+| 3 | 紅光療法 | 以紅光與近紅外光，溫和地陪伴恢復過程。 | [看圖](https://drive.google.com/file/d/17-VWj3q_btBU-62JKyxkUZD-jAoVAPfj/view) `17-VWj3q_btBU-62JKyxkUZD-jAoVAPfj` |
+| 4 | 身心共振 | 透過溫和的頻率與律動，幫助身心回到放鬆的節奏。 | [看圖](https://drive.google.com/file/d/1hYodITAGAI9bhxVxGRdxa3H4dc6ldTNT/view) `1hYodITAGAI9bhxVxGRdxa3H4dc6ldTNT` |
 
 **身心共振（新寫）**：照片是 LED 面罩＋黑皮躺椅＋茶盤——讀作放鬆、私密。文案走「頻率與律動 → 放鬆」，不碰療效。
 

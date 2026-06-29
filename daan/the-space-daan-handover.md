@@ -1,7 +1,7 @@
 # 伊生大安診所 — THE SPACE 照片交付（給設計師）
 
 **用途**：大安頁「THE SPACE」區塊（7 個空間）。
-**來源**：Drive 複製資料夾 `1MH-V0xTq3gSx0M7R4ZuPluTn0FKYlI8x`（不使用任何 Minus Plus／信義 照片）。
+**來源**：Drive 複製資料夾 [開資料夾](https://drive.google.com/drive/folders/1MH-V0xTq3gSx0M7R4ZuPluTn0FKYlI8x) `1MH-V0xTq3gSx0M7R4ZuPluTn0FKYlI8x`（不使用任何 Minus Plus／信義 照片）。
 **檢視**：點連結在 Drive 看圖。品牌調性：暖中性、低飽和、沉穩、暖光、乾淨、premium。
 **註**：標 ★pro 的是 2022 專業攝影（高解析），我從 Shawn 提供的縮圖判讀；設計師可在 Drive 直接取用。其餘為手機/VSCO 修圖。
 
@@ -51,7 +51,7 @@
 
 ## 額外可用素材（非 THE SPACE，但很好用）
 - **照護當下／溫度**：★pro ĒSEN 145 ｜[看圖](https://drive.google.com/file/d/14aFXfiDiERAvqZR4Y25GjHh_av9oFo8u/view)、ĒSEN 135 ｜[看圖](https://drive.google.com/file/d/1WyGW6RS1mpt-Y5o37zRenHU-JaZ1qHJ3/view)（醫護握手/陪伴客人）→ 適合「照護團隊／追蹤」或 testimonial 區。
-- **初診流程影片**（`1D6KlAtgyFsb867JkUzthEy4OMCx6Nsv6`，9:16 直式）：大安頁「初診流程 / how it works」嵌入影片。⚠️ 片中招牌仍是舊「三高・慢箋」定位，確認是否要更新。
+- **初診流程影片**（[看圖](https://drive.google.com/file/d/1D6KlAtgyFsb867JkUzthEy4OMCx6Nsv6/view) `1D6KlAtgyFsb867JkUzthEy4OMCx6Nsv6`，9:16 直式）：大安頁「初診流程 / how it works」嵌入影片。⚠️ 片中招牌仍是舊「三高・慢箋」定位，確認是否要更新。
 
 ## 提醒
 - **旋轉**：IMG_3800、IMG_4930 存成 90°，上線前轉正。

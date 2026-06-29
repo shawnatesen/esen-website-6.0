@@ -20,7 +20,7 @@
 | `Featured` | Switch | 是否優先顯示 |
 | `Order` | Number | 排序 |
 
-> Thumbnail 來源：可從貼文截圖，或用「同意使用照片」Drive 資料夾 `1OLY-apoh60e0U7OFDTVeLcRCcINGNmPe`。
+> Thumbnail 來源：可從貼文截圖，或用「同意使用照片」Drive 資料夾 [開資料夾](https://drive.google.com/drive/folders/1OLY-apoh60e0U7OFDTVeLcRCcINGNmPe) `1OLY-apoh60e0U7OFDTVeLcRCcINGNmPe`。
 
 ---
 

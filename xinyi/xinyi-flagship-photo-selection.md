@@ -1,7 +1,7 @@
 # 伊生信義診所 旗艦頁｜照片精選（給設計師）
 
 **用途**：信義旗艦頁各版位用圖（HERO／THE SPACE 牆／ĒSEN CLUB 底圖／RECOVERY TECH 卡）。
-**來源**：全部 **Minus Plus 官方空間攝影**（`1xQAhhwRfBgDAH8mp3ed9JenwY4eZ1g6m`）。DSC（2026-05）與 DSCF（媒體日）兩組是**活動/人像快照**（人、餐桌、投影幕），不符合 exclusive、空間導向的調性，未採用。
+**來源**：全部 **Minus Plus 官方空間攝影**（[看圖](https://drive.google.com/file/d/1xQAhhwRfBgDAH8mp3ed9JenwY4eZ1g6m/view) `1xQAhhwRfBgDAH8mp3ed9JenwY4eZ1g6m`）。DSC（2026-05）與 DSCF（媒體日）兩組是**活動/人像快照**（人、餐桌、投影幕），不符合 exclusive、空間導向的調性，未採用。
 **檢視**：點連結看圖。共檢視 64 張。
 
 ---

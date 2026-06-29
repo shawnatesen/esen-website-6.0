@@ -39,7 +39,7 @@
 **現況**：純文字 Hero，缺少 premium 視覺重量。
 **改**：加滿版底圖 ＋ 暗 scrim 壓字。
 
-- 底圖：**DSC01795**（會所 lounge，深色留白）`1mtviWnvaZe-62Ef0YHNwPc5PYaYo9DFP`
+- 底圖：**DSC01795**（會所 lounge，深色留白）[看圖](https://drive.google.com/file/d/1mtviWnvaZe-62Ef0YHNwPc5PYaYo9DFP/view) `1mtviWnvaZe-62Ef0YHNwPc5PYaYo9DFP`
 - Eyebrow：`NOX · ĒSEN CLUB`
 - H1：`影響力，從健康開始。`
 - Sub：`為現代高階領導者打造的私人醫療團隊——用最好的狀態，繼續影響與體驗世界。`
@@ -63,7 +63,7 @@
 - 內文：
   > 你習慣把每件事做到最好，卻發現最難管理的，是自己的健康。
   > 在 NOX，一支跨科別的專業團隊接手——基因檢測師、醫師、營養師、健康管理師，長期陪著你。該做什麼、什麼時候做，由團隊判斷；你只要把健康交給我們，把時間留給真正重要的事。
-- 照片：**DSC01307**（一對一深談，最像私人照護）`17yfxj3gLPvsDeg9DVF6mnsI0M2Bt9RlE`
+- 照片：**DSC01307**（一對一深談，最像私人照護）[看圖](https://drive.google.com/file/d/17yfxj3gLPvsDeg9DVF6mnsI0M2Bt9RlE/view) `17yfxj3gLPvsDeg9DVF6mnsI0M2Bt9RlE`
   *（若日後有更好的「醫師＋會員」實照，優先替換。）*
 
 > 設計：左文右圖（或上文下圖），給這段最大的呼吸空間。這是全頁的情感支點。
@@ -148,7 +148,7 @@
 ### ⑧ ĒSEN CLUB — 網絡與連結〔社群・只此一段，收斂〕
 **社群全頁只出現這一段，放在最終 CTA 前。** 醫療實質之後的「還有歸屬感」收尾。
 
-- 滿版底圖：**DSC08157**（暖調晚宴）`14ylajxhjUJa2yuBSC-M9_w-iBXVFcalT` ＋暗 scrim，文字置中
+- 滿版底圖：**DSC08157**（暖調晚宴）[看圖](https://drive.google.com/file/d/14ylajxhjUJa2yuBSC-M9_w-iBXVFcalT/view) `14ylajxhjUJa2yuBSC-M9_w-iBXVFcalT` ＋暗 scrim，文字置中
 - Eyebrow：`ĒSEN Club`
 - H2：`在私人醫療團隊之外，還有一群同頻的人。`
 - 一句見證：`「他們從不急著推銷，而是用最適合我的方式陪著我。」`
@@ -174,10 +174,10 @@
 **4 張卡文案 ＋ 照片**：
 | # | 卡片 | 文案（draft） | 照片 ID |
 |---|---|---|---|
-| 1 ★feature | 冷凍艙 | 全身低溫環境，幫助身體進入恢復節奏。 | `1WmnS4_owZT6qa1fDyyZF5lvyB__qbIBH` |
-| 2 | 冰浴 & 桑拿 | 冷熱交替，是常見的恢復方式之一。 | `1pJhX8kaBp0fOfTv5K2eqhG7EaJPrcKXd` |
-| 3 | 紅光療法 | 以紅光與近紅外光，溫和地陪伴恢復過程。 | `17-VWj3q_btBU-62JKyxkUZD-jAoVAPfj` |
-| 4 | 身心共振 | 透過溫和的頻率與律動，幫助身心回到放鬆的節奏。 | `1hYodITAGAI9bhxVxGRdxa3H4dc6ldTNT` |
+| 1 ★feature | 冷凍艙 | 全身低溫環境，幫助身體進入恢復節奏。 | [看圖](https://drive.google.com/file/d/1WmnS4_owZT6qa1fDyyZF5lvyB__qbIBH/view) `1WmnS4_owZT6qa1fDyyZF5lvyB__qbIBH` |
+| 2 | 冰浴 & 桑拿 | 冷熱交替，是常見的恢復方式之一。 | [看圖](https://drive.google.com/file/d/1pJhX8kaBp0fOfTv5K2eqhG7EaJPrcKXd/view) `1pJhX8kaBp0fOfTv5K2eqhG7EaJPrcKXd` |
+| 3 | 紅光療法 | 以紅光與近紅外光，溫和地陪伴恢復過程。 | [看圖](https://drive.google.com/file/d/17-VWj3q_btBU-62JKyxkUZD-jAoVAPfj/view) `17-VWj3q_btBU-62JKyxkUZD-jAoVAPfj` |
+| 4 | 身心共振 | 透過溫和的頻率與律動，幫助身心回到放鬆的節奏。 | [看圖](https://drive.google.com/file/d/1hYodITAGAI9bhxVxGRdxa3H4dc6ldTNT/view) `1hYodITAGAI9bhxVxGRdxa3H4dc6ldTNT` |
 
 > **VO₂max 已移出本段** → 歸 CAPABILITIES 檢測群組：`VO₂max 心肺適能檢測：了解身體的有氧表現，作為恢復與訓練的基準。`
 > 冷凍艙 feature 卡 `object-position:center 26%`（讓人像/霧氣入鏡，不要只剩艙門）。
