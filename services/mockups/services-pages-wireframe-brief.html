@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ĒSEN Services — 線框 Brief（給設計師）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F3EF; --ink:#2A2521; --muted:#7A7166; --line:#C9BFB0;
+    --ochre:#7A5038; --titanium:#9B8062; --box:#FFFFFF; --dark:#2A2521;
+    --mono:"SF Mono",ui-monospace,Menlo,monospace; --sans:"Noto Sans TC",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 60px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+  .top{padding:40px 0 8px}
+  .top h1{font-size:24px;font-weight:700}
+  .top p{font-size:13px;color:var(--muted);margin-top:6px}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+  .legend b{color:var(--ink)}
+
+  .pageblock{margin-top:40px}
+  .phead{display:flex;align-items:center;gap:12px;background:var(--dark);color:#fff;border-radius:6px;padding:14px 20px}
+  .phead .slug{font-family:var(--mono);font-size:12px;color:var(--titanium)}
+  .phead h2{font-size:18px;font-weight:700}
+  .phead .obj{font-size:12px;color:rgba(255,255,255,.65);margin-left:auto}
+
+  .sec{display:flex;gap:16px;background:var(--box);border:1px dashed var(--line);border-radius:6px;padding:18px 20px;margin-top:12px}
+  .num{flex:none;width:30px;height:30px;border-radius:50%;background:var(--dark);color:#fff;font-family:var(--mono);font-size:13px;display:flex;align-items:center;justify-content:center}
+  .body{flex:1}
+  .row1{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .secname{font-size:15px;font-weight:700}
+  .comp{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;color:var(--titanium);border:1px solid var(--titanium);border-radius:3px;padding:2px 8px}
+  .comp.dark{color:#fff;background:var(--dark);border-color:var(--dark)}
+  .content{font-size:13.5px;color:#4a443c;margin-top:8px}
+  .content .lbl{color:var(--muted);font-size:12px}
+  .cta{font-family:var(--mono);font-size:12px;color:var(--ochre);margin-top:8px}
+  .cta b{font-weight:700}
+  .mini{font-size:12px;color:var(--muted);font-style:italic;margin-top:6px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
+  .two div{background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:10px 12px;font-size:12.5px}
+  .two .h{font-family:var(--mono);font-size:10.5px;color:var(--titanium);margin-bottom:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <h1>ĒSEN Services — 線框 Brief</h1>
+    <p>3 頁分開（screen / treatment / wellness）＋首頁一個總覽區塊導流。下面是每頁的 section 順序、元件類型、內容、連結。實際文案見 <b>services-pages-content.md</b>。已對齊 ĒSEN Design System。</p>
+    <div class="legend">
+      <span><b>元件標籤</b>：Hero · Card Grid · Chip Row · 2-Col · Block Grid · CTA Band</span>
+      <span><b style="color:var(--titanium)">■</b> 深色 section（Nox）</span>
+    </div>
+  </div>
+
+  <!-- 首頁總覽 -->
+  <div class="pageblock">
+    <div class="phead"><span class="slug">首頁</span><h2>Services 總覽區塊</h2><span class="obj">目標：一眼看懂三條線 → 導流</span></div>
+    <div class="sec"><div class="num">·</div><div class="body">
+      <div class="row1"><span class="secname">三欄總覽</span><span class="comp">3-Col Teaser</span></div>
+      <div class="content">檢測 · 看見 ｜ 調養 · 調理 ｜ 追蹤 · 陪伴 —— 各一句＋連到對應頁。</div>
+      <div class="cta">CTA：<b>檢測 → /service/screen</b> ｜ <b>調養 → /service/treatment</b> ｜ <b>追蹤 → /service/wellness</b></div>
+    </div></div>
+  </div>
+
+  <!-- 檢測 -->
+  <div class="pageblock">
+    <div class="phead"><span class="slug">/service/screen</span><h2>檢測 · SEE 看見</h2><span class="obj">目標：賣招牌檢測＋接住搜尋需求</span></div>
+
+    <div class="sec"><div class="num">1</div><div class="body">
+      <div class="row1"><span class="secname">Hero</span><span class="comp dark">Hero · 深色/實拍</span></div>
+      <div class="content">標題「看見別人看不到的身體。」＋副標（從基因到全年數據，在問題成為問題之前）。</div>
+      <div class="cta">主 <b>預約初次諮詢 → /consult</b> ｜ 次 <b>了解 ĒSEN Club → /nox</b></div>
+    </div></div>
+
+    <div class="sec"><div class="num">2</div><div class="body">
+      <div class="row1"><span class="secname">招牌主推</span><span class="comp">3-Card Grid</span></div>
+      <div class="content">① ĒSEN 360° 基因檢測 / Pro〔信義〕 ② ĒSEN Assess / Assess Plus〔兩院區〕 ③ VO₂max · 自律神經 · 深度影像〔信義〕。每卡：名稱＋一句＋院區 tag。</div>
+    </div></div>
+
+    <div class="sec"><div class="num">3</div><div class="body">
+      <div class="row1"><span class="secname">熱搜常見</span><span class="comp">Chip Row</span></div>
+      <div class="content">過敏原 · 男性賀爾蒙 · 女性賀爾蒙 · 代謝營養素 · 腸道菌 · 重金屬 · 癌症風險基因 · 情緒壓力。</div>
+      <div class="mini">用途：接 Google 搜尋流量；文案結尾導向上方招牌方案。</div>
+    </div></div>
+
+    <div class="sec"><div class="num">4</div><div class="body">
+      <div class="row1"><span class="secname">Availability</span><span class="comp">2-Col List</span></div>
+      <div class="two"><div><div class="h">大安（開放）</div>常規健檢 · 基礎血液生化 · 影像 · 家醫追蹤 · 上述熱搜單項</div><div><div class="h">信義 · Club</div>360 基因 · Assess Plus · VO₂max · 自律神經/腦波 · Assess Pro</div></div>
+    </div></div>
+
+    <div class="sec"><div class="num">5</div><div class="body">
+      <div class="row1"><span class="secname">收尾 CTA</span><span class="comp dark">CTA Band · 深色</span></div>
+      <div class="content">「從一次對話開始。」（取代舊的恐嚇式文案）</div>
+      <div class="cta">主 <b>預約初次諮詢 → /consult</b> ｜ 次 <b>了解 ĒSEN Club → /nox</b></div>
+    </div></div>
+  </div>
+
+  <!-- 調養 -->
+  <div class="pageblock">
+    <div class="phead"><span class="slug">/service/treatment</span><h2>調養 · OPTIMIZE 調理</h2><span class="obj">目標：療程不是菜單，是醫療決策</span></div>
+
+    <div class="sec"><div class="num">1</div><div class="body">
+      <div class="row1"><span class="secname">Hero</span><span class="comp dark">Hero · 深色</span></div>
+      <div class="content">標題「一站式全方位抗衰老療程。」＋副標（依你的數據與基因，醫師決定使用方式與頻率）。</div>
+      <div class="cta">主 <b>預約初次諮詢 → /consult</b></div>
+    </div></div>
+
+    <div class="sec"><div class="num">2</div><div class="body">
+      <div class="row1"><span class="secname">療程目錄</span><span class="comp dark">Card Grid · 深色（投影片版型）</span></div>
+      <div class="content"><span class="lbl">卡片解剖：</span>編號 · 英文名 · 中文名 · 一句描述 · 分類 tag · 適用症狀群 · 院區。</div>
+      <div class="content">BOOST 點滴 · PACK 營養品 · PRP 增生 · ILIB 靜脈雷射 · 螯合排毒 · 血液淨化 · HRT 賀爾蒙 · ĒSEN Recovery（冷凍艙/紅光/高壓氧）。</div>
+    </div></div>
+
+    <div class="sec"><div class="num">3</div><div class="body">
+      <div class="row1"><span class="secname">Availability</span><span class="comp">2-Col List</span></div>
+      <div class="two"><div><div class="h">伊生大安（開放）</div>PRP · ILIB · BOOST · 螯合排毒 · 血液淨化(DFPP) · HRT</div><div><div class="h">伊生信義 · Club</div>含大安全部 ＋ ĒSEN Recovery（冷凍艙/紅光/高壓氧）</div></div>
+    </div></div>
+
+    <div class="sec"><div class="num">4</div><div class="body">
+      <div class="row1"><span class="secname">收尾 CTA</span><span class="comp dark">CTA Band · 深色</span></div>
+      <div class="cta">主 <b>預約初次諮詢 → /consult</b> ｜ 次 <b>了解 ĒSEN Club → /nox</b></div>
+    </div></div>
+  </div>
+
+  <!-- 追蹤 -->
+  <div class="pageblock">
+    <div class="phead"><span class="slug">/service/wellness</span><h2>追蹤 · THRIVE 陪伴</h2><span class="obj">目標：團隊＋數據的長期關係</span></div>
+
+    <div class="sec"><div class="num">1</div><div class="body">
+      <div class="row1"><span class="secname">Hero</span><span class="comp">Hero · 暖底</span></div>
+      <div class="content">標題「一支團隊，把長期照顧變成每一天。」＋副標（不是維持現狀，而是持續變得更好）。</div>
+      <div class="cta">主 <b>預約初次諮詢 → /consult</b></div>
+    </div></div>
+
+    <div class="sec"><div class="num">2</div><div class="body">
+      <div class="row1"><span class="secname">內容區塊</span><span class="comp">4-Block Grid</span></div>
+      <div class="content">① ĒSEN Intelligence 健康數據引擎〔扛 AI 主軸・feature〕 ② ĒSEN CARE 全年管理 ③ Wellness · 生活醫學諮詢（營養師・心理師） ④ 專屬照護團隊（秘書/顧問/護理師/主治醫師）。</div>
+    </div></div>
+
+    <div class="sec"><div class="num">3</div><div class="body">
+      <div class="row1"><span class="secname">Availability</span><span class="comp">2-Col List</span></div>
+      <div class="two"><div><div class="h">大安（開放）</div>健康管理門診 · 生活醫學諮詢 · 季度追蹤 · 個人化建議</div><div><div class="h">信義 · Club</div>ĒSEN CARE 年度計劃 · 一對一團隊長期陪伴 · 數據引擎 · 跨據點管理</div></div>
+    </div></div>
+
+    <div class="sec"><div class="num">4</div><div class="body">
+      <div class="row1"><span class="secname">ĒSEN Club 邀請帶</span><span class="comp dark">Invite Band · 深色</span></div>
+      <div class="content">「更深的陪伴，屬於 ĒSEN Club。」 <span class="lbl">BASE＝社群會籍起點；NOX＝最深、一對一私人醫療團隊（信義專屬）。</span></div>
+      <div class="cta"><b>了解 ĒSEN Club → /nox · /base</b>（此頁不做完整會籍比較）</div>
+    </div></div>
+
+    <div class="sec"><div class="num">5</div><div class="body">
+      <div class="row1"><span class="secname">收尾 CTA</span><span class="comp dark">CTA Band · 深色</span></div>
+      <div class="cta">主 <b>預約初次諮詢 → /consult</b></div>
+    </div></div>
+  </div>
+
+</div>
+</body>
+</html>

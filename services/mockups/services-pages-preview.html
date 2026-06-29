@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ĒSEN Services 三頁預覽 — 檢測 · 調養 · 追蹤</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --aura:#FFFFFF; --grain:#E4DED2; --nox:#000000; --ebony:#3E322C; --muted:#6A6052;
+    --titanium:#9B8062; --ochre:#7A5038;
+    --line-l:rgba(62,50,44,.15); --line-d:rgba(255,255,255,.14);
+    --serif:"Noto Serif TC",serif; --sans:"Noto Sans TC",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);color:var(--ebony);background:var(--aura);font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+  .eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--titanium);font-weight:500}
+  .sec-title{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4vw,46px);line-height:1.2;letter-spacing:-.01em;margin:14px 0 8px}
+  .sec-sub{font-size:15px;color:var(--muted);max-width:640px}
+  .pagetag{display:inline-block;font-size:12px;letter-spacing:.1em;color:var(--muted);border:1px solid var(--line-l);border-radius:999px;padding:5px 14px;margin-bottom:8px}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--ochre);color:#fff;font-size:14px;letter-spacing:.04em;padding:14px 26px;border-radius:2px;text-decoration:none;transition:opacity .18s}
+  .btn:hover{opacity:.7}
+  .grp{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--titanium);font-weight:500;margin:0 0 18px}
+  .avail{font-size:11px;letter-spacing:.06em;color:var(--muted);border:1px solid var(--line-l);border-radius:2px;padding:3px 8px;white-space:nowrap}
+
+  /* page divider strip */
+  .pagebar{background:var(--grain);text-align:center;padding:10px;font-size:12px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
+
+  /* ── 檢測 (light) ── */
+  .screen{padding:84px 0;background:var(--aura)}
+  .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+  .lcard{border:1px solid var(--line-l);border-radius:8px;padding:26px;background:var(--aura)}
+  .lcard .t{font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:10px}
+  .lcard .d{font-size:13.5px;color:var(--muted);line-height:1.75;margin-bottom:16px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .chip{font-size:13px;color:var(--ebony);border:1px solid var(--line-l);border-radius:999px;padding:9px 16px;background:var(--aura)}
+  .layerlab{display:flex;align-items:baseline;gap:12px;margin:48px 0 0}
+  .layerlab b{font-family:var(--serif);font-size:18px;font-weight:600}
+  .layerlab span{font-size:13px;color:var(--muted)}
+  .funnel{font-size:13px;color:var(--muted);margin-top:18px;border-left:2px solid var(--titanium);padding-left:14px;line-height:1.7}
+
+  /* ── 調養 (dark, slide-style) ── */
+  .treat{padding:90px 0;background:var(--nox);color:#fff}
+  .treat .sec-sub{color:rgba(255,255,255,.6)}
+  .tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+  .tcard{border:1px solid var(--line-d);border-radius:8px;padding:24px 22px;background:rgba(255,255,255,.03);display:flex;flex-direction:column}
+  .tcard .no{font-size:12px;color:var(--titanium);letter-spacing:.1em;font-weight:500}
+  .tcard .en{font-size:12.5px;color:var(--titanium);font-weight:700;letter-spacing:.04em;margin-top:2px}
+  .tcard .cn{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:.06em;margin:10px 0 12px;color:#fff}
+  .tcard .d{font-size:13px;color:rgba(255,255,255,.62);line-height:1.7;flex:1}
+  .tcard .cat{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--titanium);margin:18px 0 12px;border-top:1px solid var(--line-d);padding-top:14px}
+  .sx{display:flex;flex-wrap:wrap;gap:6px 10px}
+  .sx span{font-size:12px;color:rgba(255,255,255,.78)}
+  .sx span::after{content:" ·";color:rgba(255,255,255,.3)}
+  .sx span:last-child::after{content:""}
+
+  /* ── 追蹤 (warm + invite band) ── */
+  .track{padding:90px 0;background:var(--grain)}
+  .tblocks{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:40px}
+  .tb{background:var(--aura);border:1px solid var(--line-l);border-radius:8px;padding:30px}
+  .tb .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--titanium);font-weight:500}
+  .tb .t{font-family:var(--serif);font-size:21px;font-weight:600;margin:10px 0 10px}
+  .tb .d{font-size:14px;color:var(--muted);line-height:1.8}
+  .tb.feature{border-color:var(--titanium)}
+  .invite{background:var(--nox);color:#fff;text-align:center;padding:80px 0}
+  .invite .sec-title{color:#fff;font-weight:500}
+  .invite .tiers{display:flex;gap:50px;justify-content:center;margin:26px 0 34px;flex-wrap:wrap}
+  .tier{max-width:300px;text-align:left}
+  .tier .n{font-family:var(--serif);font-size:20px;color:var(--titanium);font-weight:600}
+  .tier .x{font-size:13.5px;color:rgba(255,255,255,.7);margin-top:6px;line-height:1.7}
+
+  .note{background:var(--aura);border-top:1px solid var(--line-l);padding:24px 0;font-size:12.5px;color:var(--muted);line-height:1.7}
+  .note b{color:var(--ebony)}
+  @media(max-width:860px){.cards3,.tgrid,.tblocks{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- ════════ 檢測 ════════ -->
+<div class="pagebar">PAGE 1 / 3 — service/screen</div>
+<section class="screen">
+  <div class="wrap">
+    <span class="pagetag">檢測 · SEE 看見</span>
+    <div class="eyebrow">SERVICES · SCREEN</div>
+    <h1 class="sec-title">看見別人看不到的身體。</h1>
+    <p class="sec-sub">從基因到全年數據，ĒSEN 為你建立一張完整、且逐年更新的健康地圖——在問題成為問題之前。</p>
+
+    <div class="layerlab"><b>招牌主推</b><span>高價值、要推的核心檢測</span></div>
+    <div class="cards3">
+      <div class="lcard"><div class="t">ĒSEN 360° 基因檢測 / Pro</div><div class="d">從 DNA 讀懂先天體質——癌症、心血管、代謝、神經退化等關鍵基因標記。Pro 為更完整的基因組合。</div><span class="avail">信義 Club</span></div>
+      <div class="lcard"><div class="t">ĒSEN Assess / Assess Plus</div><div class="d">120+ 項血液生化與功能醫學指標，建立並逐年更新你的健康基準線。Plus 為深度版。</div><span class="avail">兩院區</span></div>
+      <div class="lcard"><div class="t">VO₂max · 自律神經 · 深度影像</div><div class="d">心肺耐力黃金指標、壓力與恢復的神經評估、超音波影像分析。</div><span class="avail">信義 Club</span></div>
+    </div>
+
+    <div class="layerlab"><b>熱搜常見</b><span>市場上人們會 Google 的單項檢測 — 接住需求</span></div>
+    <div class="chips">
+      <span class="chip">過敏原檢測</span><span class="chip">男性賀爾蒙檢測</span><span class="chip">女性賀爾蒙檢測</span>
+      <span class="chip">代謝營養素檢測</span><span class="chip">腸道菌相檢測</span><span class="chip">重金屬檢測</span>
+      <span class="chip">癌症風險基因</span><span class="chip">情緒壓力 / 自律神經</span><span class="chip">維生素・微量元素</span>
+    </div>
+    <p class="funnel">這些單項檢測抓住搜尋流量與入門客，文案結尾把人導向上方的招牌方案：「單項檢測是健康藍圖的一塊；ĒSEN 用一次完整評估，幫你把碎片拼成全貌。」</p>
+  </div>
+</section>
+
+<!-- ════════ 調養 ════════ -->
+<div class="pagebar">PAGE 2 / 3 — service/treatment</div>
+<section class="treat">
+  <div class="wrap">
+    <span class="pagetag" style="color:rgba(255,255,255,.6);border-color:var(--line-d)">調養 · OPTIMIZE 調理</span>
+    <div class="eyebrow">SERVICES · TREATMENT</div>
+    <h1 class="sec-title">一站式全方位抗衰老療程。</h1>
+    <p class="sec-sub">不是服務菜單，是依你的數據與基因，醫師為你決定使用方式與頻率的醫療決策。</p>
+    <div class="tgrid">
+
+      <div class="tcard"><div class="en">NUTRIENT IV</div><div class="cn">ĒSEN BOOST 營養點滴</div><div class="d">繞過腸胃，營養直達細胞；劑量配方由醫師依數據決定。</div><div class="cat">兩院區</div><div class="sx"><span>疲勞</span><span>免疫低下</span><span>能量補給</span></div></div>
+
+      <div class="tcard"><div class="en">SUPPLEMENT</div><div class="cn">ĒSEN PACK 營養品</div><div class="d">依你的檢測結果，由醫師藥師配出專屬於你的營養組合。</div><div class="cat">兩院區</div><div class="sx"><span>客製</span><span>依檢測規劃</span></div></div>
+
+      <div class="tcard"><div class="no">04</div><div class="en">REGENERATIVE</div><div class="cn">PRP 增生療法</div><div class="d">自體高濃度血小板，刺激細胞修復與組織再生。</div><div class="cat">兩院區</div><div class="sx"><span>組織修復慢</span><span>關節疼痛</span><span>運動傷害</span><span>細胞老化</span></div></div>
+
+      <div class="tcard"><div class="no">05</div><div class="en">PHOTOBIOMODULATION</div><div class="cn">ILIB 靜脈雷射</div><div class="d">低能量雷射活化血液循環，提升免疫與抗氧化。</div><div class="cat">兩院區</div><div class="sx"><span>慢性疲勞</span><span>精神衰退</span><span>自律神經失調</span><span>失眠焦慮</span></div></div>
+
+      <div class="tcard"><div class="no">06</div><div class="en">DMSA · EDTA</div><div class="cn">螯合排毒療法</div><div class="d">靜脈螯合劑系統性排除體內重金屬與環境毒素。</div><div class="cat">大安</div><div class="sx"><span>重金屬堆積</span><span>慢性發炎</span><span>代謝變慢</span><span>排毒淨化</span></div></div>
+
+      <div class="tcard"><div class="no">07</div><div class="en">BLOOD PURIFY</div><div class="cn">血液淨化療法</div><div class="d">體外循環過濾血中毒素、代謝廢物與慢性發炎因子。</div><div class="cat">大安</div><div class="sx"><span>排毒淨化</span><span>毒素累積</span><span>血液循環差</span><span>皮膚暗沉</span></div></div>
+
+      <div class="tcard"><div class="no">08</div><div class="en">HORMONE · HRT</div><div class="cn">賀爾蒙補充療法</div><div class="d">女性以 Oestrogel、男性以 Androgel / Nebido，精準恢復荷爾蒙平衡。</div><div class="cat">兩院區</div><div class="sx"><span>疲勞</span><span>情緒波動</span><span>性功能</span><span>肌肉流失</span><span>更年期</span></div></div>
+
+      <div class="tcard"><div class="en">RECOVERY</div><div class="cn">ĒSEN Recovery 系列</div><div class="d">冷凍艙 Cryo、紅光 Red Light、高壓氧 Hyperbaric 整合的恢復系列。</div><div class="cat">信義 Club</div><div class="sx"><span>發炎</span><span>運動表現</span><span>恢復</span><span>抗老</span></div></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 追蹤 ════════ -->
+<div class="pagebar">PAGE 3 / 3 — service/wellness</div>
+<section class="track">
+  <div class="wrap">
+    <span class="pagetag">追蹤 · THRIVE 陪伴</span>
+    <div class="eyebrow">SERVICES · THRIVE</div>
+    <h1 class="sec-title">一支團隊，把長期照顧變成每一天。</h1>
+    <p class="sec-sub">真正的健康不是維持現狀，而是持續變得更好——由會學習的數據與真正認識你的團隊一起完成。</p>
+    <div class="tblocks">
+      <div class="tb feature"><div class="k">AI-NATIVE · 數據主軸</div><div class="t">ĒSEN Intelligence · 健康數據引擎</div><div class="d">把你的基因與全年檢測數據，整合成一份會隨時間學習的健康檔案。AI 找出趨勢，醫師據此行動。</div></div>
+      <div class="tb"><div class="k">ĒSEN CARE</div><div class="t">全年健康管理</div><div class="d">一整年的計畫，不是一次看診。季度回診，團隊依你的數據持續調整方向。</div></div>
+      <div class="tb"><div class="k">WELLNESS</div><div class="t">生活醫學諮詢</div><div class="d">營養師與心理師，陪你把情緒、睡眠、運動、營養（4 Pillar）變成可執行的日常。</div></div>
+      <div class="tb"><div class="k">YOUR TEAM</div><div class="t">專屬照護團隊</div><div class="d">健康秘書、健康顧問、資深護理師與抗衰老主治醫師——每兩週主動追蹤、每月完整回顧。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- invite band -->
+<section class="invite">
+  <div class="wrap">
+    <div class="eyebrow">ĒSEN CLUB</div>
+    <h2 class="sec-title">更深的陪伴，屬於 ĒSEN Club。</h2>
+    <div class="tiers">
+      <div class="tier"><div class="n">BASE</div><div class="x">社群會籍的起點——歸屬與長期照護的入口。</div></div>
+      <div class="tier"><div class="n">NOX</div><div class="x">最深、最貼身的一對一私人醫療團隊（信義專屬）。</div></div>
+    </div>
+    <a class="btn" href="#">了解 ĒSEN Club</a>
+  </div>
+</section>
+
+<div class="note">
+  <div class="wrap"><b>內容預覽，非最終視覺稿。</b> 已對齊 ĒSEN Design System（Aura White／Soft Grain／Nox Black＋Burnt Ochre CTA／Eventide Titanium 點綴；Noto Serif TC＋Noto Sans TC；邊框優先、圓角 2px）。文字為示意，細節註記見 <b>services-pages-content.md</b>。</div>
+</div>
+
+</body>
+</html>
