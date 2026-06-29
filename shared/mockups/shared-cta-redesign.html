@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ĒSEN 共用 CTA — 重做（對齊 Design System）</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --aura:#FFFFFF;--nox:#000000;--ebony:#3E322C;--titanium:#9B8062;--ochre:#7A5038;
+    --serif:"Noto Serif TC",serif;--sans:"Noto Sans TC",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:#15110e;font-weight:300}
+  .wrap{max-width:760px;margin:0 auto;padding:0 32px;position:relative}
+
+  /* ── 共用 CTA section（可整段搬去 Webflow Embed）── */
+  .cta-band{position:relative;background:var(--nox);color:var(--aura);text-align:center;padding:120px 0;overflow:hidden}
+  /* aura 母題（雙層線框，置中淡淡的）*/
+  .aura{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:520px;height:520px;border:1px solid rgba(255,255,255,.08);border-radius:50%}
+  .aura::after{content:"";position:absolute;inset:60px;border:1px solid rgba(155,128,98,.28);border-radius:50%}
+  .eyebrow{position:relative;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--titanium);font-weight:500}
+  .cta-band h2{position:relative;font-family:var(--serif);font-weight:600;font-size:clamp(30px,4.4vw,46px);line-height:1.3;margin:16px 0 18px;letter-spacing:.01em}
+  .cta-band p{position:relative;font-size:16px;line-height:1.9;color:rgba(255,255,255,.78);max-width:520px;margin:0 auto 36px;font-weight:300}
+  .btns{position:relative;display:inline-flex;gap:16px;flex-wrap:wrap;justify-content:center}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;letter-spacing:.04em;padding:15px 30px;border-radius:2px;text-decoration:none;transition:opacity .18s ease-out}
+  .btn:hover{opacity:.72}
+  .btn-primary{background:var(--ochre);color:#fff}
+  .btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+
+  .label{max-width:760px;margin:0 auto;padding:22px 32px;color:#8a8276;font-size:12.5px;line-height:1.7;font-family:var(--sans)}
+  .label b{color:#cabfaf}
+</style>
+</head>
+<body>
+
+<!-- ════ 重做版共用 CTA ════ -->
+<section class="cta-band">
+  <div class="aura"></div>
+  <div class="wrap">
+    <span class="eyebrow">Ready when you are</span>
+    <h2>從一次對話開始。</h2>
+    <p>最好的時機，是身體還沒發出警訊的現在。預約一次初診，讓醫療團隊先認識你，再為你規劃下一步。</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="/consult">預約初次諮詢</a>
+      <a class="btn btn-ghost" href="/nox">了解 ĒSEN Club</a>
+    </div>
+  </div>
+</section>
+
+<div class="label">
+  <b>重做重點：</b> 拿掉恐嚇＋假急迫文案（改邀請式，符合 brand voice）；拿掉冷藍人頭照（品牌禁冷藍），改 Nox 黑底＋aura 母題＝沉著、premium；行動色 Burnt Ochre、次要 ghost button、hover 用 opacity。整段可搬進 Webflow Embed，或照此 rebuild。
+</div>
+
+</body>
+</html>

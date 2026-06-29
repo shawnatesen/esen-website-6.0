@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ĒSEN Testimonial Section — 線框 + CMS 對應</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F3EF;--ink:#2A2521;--muted:#7A7166;--line:#C9BFB0;
+    --ochre:#7A5038;--titanium:#9B8062;--box:#FFFFFF;--dark:#2A2521;
+    --mono:"SF Mono",ui-monospace,Menlo,monospace;--sans:"Noto Sans TC",system-ui,sans-serif;--serif:"Noto Serif TC",serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 60px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+  .top{padding:38px 0 6px}
+  .top h1{font-size:23px;font-weight:700}
+  .top p{font-size:13px;color:var(--muted);margin-top:6px}
+  .legend{margin-top:14px;font-family:var(--mono);font-size:11px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px 14px;line-height:1.9}
+  .legend b{color:var(--ink)}
+  .phead{display:flex;align-items:center;gap:12px;background:var(--dark);color:#fff;border-radius:6px;padding:13px 18px;margin-top:30px}
+  .phead .n{font-family:var(--mono);font-size:12px;color:var(--titanium)}
+  .phead h2{font-size:16px;font-weight:700}
+  .phead .o{font-size:11.5px;color:rgba(255,255,255,.6);margin-left:auto}
+  .note{font-size:12px;color:var(--muted);margin:10px 2px 0;font-style:italic}
+
+  /* featured carousel wireframe */
+  .carousel{display:flex;align-items:stretch;gap:14px;margin-top:14px}
+  .arrow{flex:none;width:40px;border:1px dashed var(--line);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--muted);background:#fff;font-size:18px}
+  .fcard{flex:1;background:#fff;border:1px dashed var(--line);border-radius:8px;display:grid;grid-template-columns:200px 1fr;overflow:hidden;min-height:240px}
+  .fcard .ph{background:repeating-linear-gradient(45deg,#ece6da,#ece6da 8px,#f3efe6 8px,#f3efe6 16px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;text-align:center;font-family:var(--mono)}
+  .fcard .bd{padding:22px 24px;display:flex;flex-direction:column}
+  .tag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--titanium);border:1px solid var(--titanium);border-radius:999px;padding:2px 8px;align-self:flex-start;margin-bottom:12px}
+  .q{font-family:var(--serif);font-size:18px;line-height:1.7;color:var(--ink);flex:1}
+  .who{display:flex;align-items:center;gap:10px;margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
+  .av{width:38px;height:38px;border-radius:50%;background:#ece6da;flex:none}
+  .who .nm{font-weight:700;font-size:14px}
+  .who .rl{font-size:12px;color:var(--muted)}
+  .who .lk{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--ochre)}
+  .fieldcall{font-family:var(--mono);font-size:10.5px;color:#b08968;background:#fbf7f1;border:1px dashed #d8b48f;border-radius:4px;padding:2px 6px;margin:2px 0;display:inline-block}
+
+  /* wall wireframe */
+  .wall{margin-top:14px;background:#fff;border:1px dashed var(--line);border-radius:8px;padding:18px;overflow:hidden}
+  .wrow{display:flex;gap:12px;margin-bottom:12px}
+  .wrow:last-child{margin-bottom:0}
+  .wcard{flex:none;width:230px;border:1px solid var(--line);border-radius:6px;padding:12px 14px;background:var(--bg)}
+  .wcard .wq{font-size:12.5px;color:var(--ink);line-height:1.6}
+  .wcard .wb{display:flex;align-items:center;gap:8px;margin-top:10px}
+  .wcard .wav{width:26px;height:26px;border-radius:50%;background:#ddd4c4;flex:none}
+  .wcard .wh{font-size:11.5px;font-weight:700}
+  .wcard .wl{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--ochre)}
+  .dir{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:6px}
+
+  .cmsbox{background:#fff;border:1px solid var(--line);border-radius:6px;padding:16px 18px;margin-top:14px;font-size:13px}
+  .cmsbox h3{font-size:13px;font-family:var(--mono);color:var(--titanium);margin-bottom:8px}
+  .cmsbox code{font-family:var(--mono);font-size:12px;background:var(--bg);padding:1px 5px;border-radius:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <h1>Testimonial Section — 線框 + CMS 對應</h1>
+    <p>給設計師：兩個容器。① Featured 精選 carousel（可點、curate 8–12）② Wall of love 自動捲動牆（20–40，量大）。資料皆綁同一個 CMS Collection「Testimonials」。完整內容在 <b>testimonials-carousel-cms.md</b>。</p>
+    <div class="legend">
+      <b>CMS 欄位</b>：Name · Handle · Profile URL · Role 身分 · Treatment 療程 · Quote 引言 · Post URL · Media(Reel/Post/Image) · Thumbnail 圖 · Doctor 醫師 · Featured 開關 · Order<br>
+      <b>對齊 Design System</b>：Soft Grain/Aura 底、Burnt Ochre 連結色、Eventide Titanium 標籤、Noto Serif TC 引言、邊框優先無陰影、hover opacity 0.7
+    </div>
+  </div>
+
+  <!-- Featured -->
+  <div class="phead"><span class="n">SECTION A</span><h2>Featured 精選 Carousel</h2><span class="o">curate 8–12・可左右切換・可點進原貼文</span></div>
+  <div class="carousel">
+    <div class="arrow">‹</div>
+    <div class="fcard">
+      <div class="ph">Thumbnail<br>(CMS: Thumbnail)<br>人物照／貼文截圖</div>
+      <div class="bd">
+        <span class="tag">TREATMENT ← 療程</span>
+        <div class="q">「就像拿到一份身體說明書，終於知道怎麼跟自己的身體相處。」<br><span class="fieldcall">CMS: Quote</span></div>
+        <div class="who">
+          <div class="av"></div>
+          <div>
+            <div class="nm">冰蹦拉 <span class="fieldcall">Name</span></div>
+            <div class="rl">旅遊部落客 · @bonbonelephant <span class="fieldcall">Role · Handle</span></div>
+          </div>
+          <div class="lk">看原文 ↗<br><span class="fieldcall">Post URL</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow">›</div>
+  </div>
+  <div class="note">卡片結構：左 Thumbnail，右 = 療程標籤 + 引言(Serif) + 頭像/姓名/身分/handle + 連原貼文。一次顯示 1–2 張，箭頭或拖曳切換。</div>
+
+  <!-- Wall -->
+  <div class="phead"><span class="n">SECTION B</span><h2>Wall of Love 自動捲動牆</h2><span class="o">20–40 張・兩排反向慢捲・連回貼文/profile</span></div>
+  <div class="wall">
+    <div class="dir">← 第一排：向左慢速捲動（loop）</div>
+    <div class="wrow">
+      <div class="wcard"><div class="wq">「基因檢測報告幫助我更了解自己的身體。」</div><div class="wb"><div class="wav"></div><div class="wh">Evelyn Chang</div><div class="wl">↗</div></div></div>
+      <div class="wcard"><div class="wq">「224 項過敏原檢查，才知道身體一直在發炎。」</div><div class="wb"><div class="wav"></div><div class="wh">蔡佩軒 Ariel</div><div class="wl">↗</div></div></div>
+      <div class="wcard"><div class="wq">「兩週拿到報告，醫師逐項說明。」</div><div class="wb"><div class="wav"></div><div class="wh">Taipei Foodie</div><div class="wl">↗</div></div></div>
+      <div class="wcard"><div class="wq">（自動帶入 CMS 其餘 entries…）</div><div class="wb"><div class="wav"></div><div class="wh">…</div><div class="wl">↗</div></div></div>
+    </div>
+    <div class="dir">→ 第二排：向右慢速捲動（loop）</div>
+    <div class="wrow">
+      <div class="wcard"><div class="wq">「從檢測→報告→點滴→客製保健，一站完成。」</div><div class="wb"><div class="wav"></div><div class="wh">紫緹 JT</div><div class="wl">↗</div></div></div>
+      <div class="wcard"><div class="wq">「PRP 幫助加速修復。」</div><div class="wb"><div class="wav"></div><div class="wh">陳韋丞</div><div class="wl">↗</div></div></div>
+      <div class="wcard"><div class="wq">「想知道是否帶母親的癌症基因。」</div><div class="wb"><div class="wav"></div><div class="wh">融融歷險記</div><div class="wl">↗</div></div></div>
+      <div class="wcard"><div class="wq">（… 共 20–40 張）</div><div class="wb"><div class="wav"></div><div class="wh">…</div><div class="wl">↗</div></div></div>
+    </div>
+  </div>
+  <div class="note">⚠️ Wall 用「貼文截圖卡 + 連回原文」，不要嵌 20–40 個 IG iframe（會嚴重拖慢頁面）。小卡：1 行引言 + 頭像 + handle + 連結。</div>
+
+  <div class="cmsbox">
+    <h3>建置順序</h3>
+    1. 在 Webflow 建 CMS Collection <code>Testimonials</code>（欄位見上方 legend）。<br>
+    2. 匯入 <code>testimonials-carousel-cms.md</code> 的內容（7 筆 featured 已齊；wall 20–40 筆陸續補）。<br>
+    3. Featured carousel 綁 <code>Featured = true</code> 的項目；Wall 綁全部、依 <code>Order</code> 排。<br>
+    4. Thumbnail 圖：用「同意使用」Drive 資料夾或貼文截圖（Notion 內的圖連結會過期，勿直接用）。
+  </div>
+</div>
+</body>
+</html>
