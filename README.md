@@ -13,10 +13,14 @@ esen-proposal-official.webflow.io 各頁的文案 ＋ 設計 review ＋ 視覺 m
 | 頁面 | 資料夾 | 狀態 |
 |---|---|---|
 | **NOX / ĒSEN Club** (`/nox`) | [`nox/`](./nox) | ✅ 已整理（本批重點） |
-| 信義旗艦 (`/xin-yi-flagship`) | `xinyi/` | ⏳ 待推 |
-| 大安院區 (`/esen-da-an`) | `daan/` | ⏳ 待推 |
-| Services（檢測／調養／追蹤） | `services/` | ⏳ 待推 |
-| BASE / 共用 CTA / Testimonials | `shared/` | ⏳ 待推 |
+| 信義旗艦 (`/xin-yi-flagship`) | [`xinyi/`](./xinyi) | ✅ 已上傳 |
+| 大安院區 (`/esen-da-an`) | [`daan/`](./daan) | ✅ 已上傳 |
+| Services（檢測／調養／追蹤） | [`services/`](./services) | ✅ 已上傳 |
+| 共用 CTA / Testimonials | [`shared/`](./shared) | ✅ 已上傳 |
+| 現行 Webflow 匯出（參考） | [`reference/`](./reference) | 📎 參考用 |
+
+> 各 `mockups/` 內 `.html` 為原始檔、`.png` 為預覽。RECOVERY TECH 同款卡片同時用於 `/nox` 與 `/xin-yi-flagship`，兩個資料夾各放一份。
+> 註：No More Red 微網站（`esen-no-more-red`）為獨立 microsite，未納入本 repo；需要可再加。
 
 ---
 
