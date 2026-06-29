@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOX · DATA-CENTRIC</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--titanium:#9B8062;--serif:"Noto Serif TC",serif;--sans:"Noto Sans TC",system-ui,sans-serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:#0c0a09;color:#fff;font-weight:300;-webkit-font-smoothing:antialiased;line-height:1.6}
+  .sec{max-width:1140px;margin:0 auto;padding:118px 48px}
+  .grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:72px;align-items:center}
+  .eyebrow{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--titanium);font-weight:500}
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,3.8vw,44px);line-height:1.24;margin:14px 0 22px}
+  .body{font-size:16px;color:rgba(255,255,255,.72);line-height:1.95;max-width:420px}
+  .cap{margin-top:30px;display:flex;gap:34px}
+  .cap .it{font-size:13px;color:rgba(255,255,255,.55)}
+  .cap .it b{display:block;font-family:var(--serif);color:var(--titanium);font-size:15px;margin-bottom:4px;font-weight:600}
+
+  .viz{position:relative;height:340px;border:1px solid rgba(255,255,255,.1);border-radius:6px;background:linear-gradient(160deg,#15110d,#0c0a09);overflow:hidden}
+  .viz .lbl{position:absolute;font-size:11px;letter-spacing:.08em;color:rgba(255,255,255,.4)}
+  .viz .l1{top:22px;left:26px}
+  .viz .l2{bottom:20px;right:26px;color:var(--titanium)}
+  .ribbon{position:fixed;top:12px;left:12px;background:#fff;color:#000;font-size:11px;padding:5px 11px;border-radius:2px;z-index:9;opacity:.9}
+  .foot{margin-top:26px;font-size:12.5px;color:rgba(255,255,255,.4)}
+  @media(max-width:860px){.grid{grid-template-columns:1fr;gap:44px}}
+</style>
+</head>
+<body>
+<div class="ribbon">NOX · DATA-CENTRIC — 散點 → 連續曲線</div>
+<section class="sec">
+  <div class="grid">
+    <div>
+      <span class="eyebrow">Data-Centric · 以數據為依據</span>
+      <h2>每一個建議，<br>都有依據。</h2>
+      <p class="body">我們不靠感覺、也不靠通則。你的每一份數據都會被持續追蹤、彼此對照——讓團隊在問題還只是趨勢時就看見它，並隨你的身體變化調整策略。</p>
+      <div class="cap">
+        <div class="it"><b>一次性健檢</b>一年一次的快照</div>
+        <div class="it"><b>NOX 持續追蹤</b>一條不斷更新的曲線</div>
+      </div>
+    </div>
+
+    <div class="viz">
+      <span class="lbl l1">過去：零散的點</span>
+      <span class="lbl l2">NOX：持續的曲線</span>
+      <svg viewBox="0 0 560 340" width="100%" height="100%" fill="none" preserveAspectRatio="xMidYMid meet">
+        <!-- baseline -->
+        <line x1="40" y1="250" x2="520" y2="250" stroke="#ffffff" stroke-opacity=".08"/>
+        <!-- scattered dots (left third) -->
+        <circle cx="70" cy="205" r="3.5" fill="#9B8062" fill-opacity=".55"/>
+        <circle cx="120" cy="225" r="3.5" fill="#9B8062" fill-opacity=".55"/>
+        <circle cx="165" cy="198" r="3.5" fill="#9B8062" fill-opacity=".55"/>
+        <!-- continuous curve (right two-thirds), gently rising -->
+        <path d="M165 198 C 230 215, 270 150, 330 150 S 430 110, 520 92"
+              stroke="#9B8062" stroke-width="1.6" stroke-opacity=".95"/>
+        <!-- data nodes on the curve -->
+        <circle cx="330" cy="150" r="3" fill="#0c0a09" stroke="#9B8062" stroke-width="1.4"/>
+        <circle cx="430" cy="120" r="3" fill="#0c0a09" stroke="#9B8062" stroke-width="1.4"/>
+        <!-- aura highlight on the 'now' point -->
+        <circle cx="520" cy="92" r="6" fill="#9B8062"/>
+        <circle cx="520" cy="92" r="15" stroke="#9B8062" stroke-opacity=".4"/>
+        <circle cx="520" cy="92" r="26" stroke="#9B8062" stroke-opacity=".18"/>
+      </svg>
+    </div>
+  </div>
+  <p class="foot">視覺概念：左邊零散的點＝過去一次性健檢；右邊連續上升曲線＝NOX 持續追蹤，末端 aura circle 標記「此刻」。極簡線條、不放儀表板截圖。文案 draft。</p>
+</section>
+</body>
+</html>

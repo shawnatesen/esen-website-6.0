@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOX · THE METHOD — 三支柱</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--titanium:#9B8062;--serif:"Noto Serif TC",serif;--sans:"Noto Sans TC",system-ui,sans-serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:#0c0a09;color:#fff;font-weight:300;-webkit-font-smoothing:antialiased;line-height:1.6}
+  .sec{max-width:1140px;margin:0 auto;padding:118px 48px}
+  .eyebrow{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--titanium);font-weight:500;text-align:center;display:block}
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4vw,46px);line-height:1.22;text-align:center;margin:14px 0 0}
+
+  .cols{display:grid;grid-template-columns:repeat(3,1fr);margin-top:76px}
+  .col{padding:0 44px;text-align:center;position:relative}
+  .col + .col::before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1px;background:rgba(255,255,255,.12)}
+  .ord{font-family:var(--serif);font-size:13px;color:var(--titanium);letter-spacing:.18em;margin-bottom:26px}
+  .aura{width:78px;height:78px;margin:0 auto 28px}
+  .col h3{font-family:var(--serif);font-size:23px;font-weight:600;margin-bottom:16px;letter-spacing:.01em}
+  .col p{font-size:15px;color:rgba(255,255,255,.72);line-height:1.95;max-width:280px;margin:0 auto}
+
+  .journey{margin-top:64px;display:flex;align-items:center;justify-content:center;gap:14px;color:rgba(255,255,255,.5);font-size:12.5px;letter-spacing:.06em}
+  .journey .dot{width:5px;height:5px;border-radius:50%;background:var(--titanium)}
+  .journey .ln{width:46px;height:1px;background:rgba(155,128,98,.5)}
+  .ribbon{position:fixed;top:12px;left:12px;background:#fff;color:#000;font-size:11px;padding:5px 11px;border-radius:2px;z-index:9;opacity:.9}
+  .foot{margin-top:18px;text-align:center;font-size:12.5px;color:rgba(255,255,255,.4)}
+  @media(max-width:820px){.cols{grid-template-columns:1fr;gap:60px}.col + .col::before{display:none}}
+</style>
+</head>
+<body>
+<div class="ribbon">NOX · THE METHOD — aura 母題三支柱</div>
+<section class="sec">
+  <span class="eyebrow">The Method · 我們的方法</span>
+  <h2>看得夠深，才談得上預防。</h2>
+
+  <div class="cols">
+    <!-- 01 基因：一個起點（中心種子） -->
+    <div class="col">
+      <div class="ord">01</div>
+      <svg class="aura" viewBox="0 0 78 78" fill="none">
+        <circle cx="39" cy="39" r="33" stroke="#9B8062" stroke-opacity=".5" stroke-width="1"/>
+        <circle cx="39" cy="39" r="4" fill="#9B8062"/>
+      </svg>
+      <h3>獨家基因檢測</h3>
+      <p>從你的基因起點出發，看見一般健檢看不到的長期風險與體質傾向。</p>
+    </div>
+
+    <!-- 02 數據：層層同心（資料疊加） -->
+    <div class="col">
+      <div class="ord">02</div>
+      <svg class="aura" viewBox="0 0 78 78" fill="none">
+        <circle cx="39" cy="39" r="33" stroke="#9B8062" stroke-opacity=".5" stroke-width="1"/>
+        <circle cx="39" cy="39" r="22" stroke="#9B8062" stroke-opacity=".34" stroke-width="1"/>
+        <circle cx="39" cy="39" r="11" stroke="#9B8062" stroke-opacity=".22" stroke-width="1"/>
+      </svg>
+      <h3>全方位 AI 數據</h3>
+      <p>把檢測、生理指標與生活數據整合成一份完整的身體地圖，並持續更新。</p>
+    </div>
+
+    <!-- 03 團隊：兩圈交疊（連結／照護） -->
+    <div class="col">
+      <div class="ord">03</div>
+      <svg class="aura" viewBox="0 0 78 78" fill="none">
+        <circle cx="30" cy="39" r="25" stroke="#9B8062" stroke-opacity=".5" stroke-width="1"/>
+        <circle cx="48" cy="39" r="25" stroke="#9B8062" stroke-opacity=".5" stroke-width="1"/>
+      </svg>
+      <h3>有溫度的專業團隊</h3>
+      <p>數據只是起點，真正的價值是有一支團隊讀懂它、為你判斷下一步。</p>
+    </div>
+  </div>
+
+  <div class="journey">
+    <span>基因起點</span><span class="ln"></span><span class="dot"></span><span class="ln"></span>
+    <span>持續數據</span><span class="ln"></span><span class="dot"></span><span class="ln"></span>
+    <span>團隊判斷</span>
+  </div>
+  <p class="foot">aura circle 為品牌唯一插畫母題：01 起點・02 資料疊加・03 連結。hairline 分隔欄、無卡片框。文案 draft。</p>
+</section>
+</body>
+</html>

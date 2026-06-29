@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOX / ĒSEN Club — 視覺 mockup v2</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--titanium:#9B8062;--serif:"Noto Serif TC",serif;--sans:"Noto Sans TC",system-ui,sans-serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:#0c0a09;color:#fff;font-weight:300;-webkit-font-smoothing:antialiased;line-height:1.6}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 48px}
+  .eyebrow{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--titanium);font-weight:500}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;letter-spacing:.04em;padding:14px 30px;border-radius:2px;text-decoration:none;transition:opacity .2s}
+  .primary{background:var(--titanium);color:#1a140f;font-weight:500}
+  .ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+
+  .hero{position:relative;min-height:660px;display:flex;align-items:flex-end;overflow:hidden}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
+  .hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,.2) 40%,rgba(0,0,0,.85))}
+  .hero .inner{position:relative;padding-bottom:78px;max-width:680px}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,5.5vw,64px);line-height:1.12;margin:18px 0 18px}
+  .hero p{font-size:17px;color:rgba(255,255,255,.82);max-width:480px;margin-bottom:32px}
+  .cta{display:flex;gap:16px;flex-wrap:wrap}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+  .stat{text-align:center;padding:40px 16px;border-right:1px solid rgba(255,255,255,.12)}.stat:last-child{border:none}
+  .stat .n{font-family:var(--serif);font-size:46px;color:var(--titanium);line-height:1}
+  .stat .l{font-size:12.5px;color:rgba(255,255,255,.6);margin-top:10px}
+
+  /* CARE beat — the emotional core */
+  .care{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch;min-height:520px}
+  .care .t{padding:96px 64px 96px 0;display:flex;flex-direction:column;justify-content:center}
+  .care .t h2{font-family:var(--serif);font-size:clamp(30px,3.6vw,42px);font-weight:600;line-height:1.28;margin:16px 0 20px}
+  .care .t p{font-size:16px;color:rgba(255,255,255,.74);line-height:1.95;max-width:440px}
+  .care .im{position:relative;overflow:hidden;border-radius:6px}
+  .care .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+  /* single compact CLUB band */
+  .club{position:relative;min-height:380px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;margin:0 48px;border-radius:8px}
+  .club img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+  .club .sc{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5),rgba(0,0,0,.65))}
+  .club .in{position:relative;max-width:660px;padding:60px 32px}
+  .club h2{font-family:var(--serif);font-size:clamp(26px,3.2vw,38px);font-weight:600;line-height:1.35;margin:14px 0 18px}
+  .club .q{font-size:14.5px;color:rgba(255,255,255,.8);font-style:italic;margin-bottom:22px}
+  .club .lnk{font-size:13px;color:var(--titanium);letter-spacing:.04em;text-decoration:none;border-bottom:1px solid var(--titanium);padding-bottom:3px}
+
+  /* final CTA */
+  .end{text-align:center;padding:110px 0 120px}
+  .end h2{font-family:var(--serif);font-size:clamp(32px,4.2vw,50px);font-weight:600;margin-bottom:30px}
+  .ribbon{position:fixed;top:12px;left:12px;background:#fff;color:#000;font-size:11px;padding:5px 11px;border-radius:2px;z-index:9;opacity:.9}
+  .label{padding:20px 48px;font-size:12px;color:rgba(255,255,255,.45);max-width:1180px;margin:0 auto}
+</style>
+</head>
+<body>
+<div class="ribbon">NOX mockup v2 · 醫療團隊為主・社群收斂成一段</div>
+
+<section class="hero">
+  <img src="file:///tmp/nox/hero.jpg"><div class="scrim"></div>
+  <div class="wrap inner">
+    <span class="eyebrow">NOX · ĒSEN CLUB</span>
+    <h1>影響力，<br>從健康開始。</h1>
+    <p>為台灣最具影響力的人設計——用最好的狀態，繼續影響與體驗世界。</p>
+    <div class="cta"><a class="btn primary" href="#">申請加入 NOX</a><a class="btn ghost" href="#">了解更多</a></div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><div class="n">4</div><div class="l">生活醫學維度</div></div>
+  <div class="stat"><div class="n">365</div><div class="l">天全年陪伴</div></div>
+  <div class="stat"><div class="n">4×</div><div class="l">年度醫師追蹤</div></div>
+  <div class="stat"><div class="n">1</div><div class="l">純邀約制社群</div></div>
+</section>
+
+<!-- CARE beat：情感核心 -->
+<section class="wrap"><div class="care">
+  <div class="t">
+    <span class="eyebrow">Private Care · 私人醫療團隊</span>
+    <h2>不必再當<br>自己的健康專案經理。</h2>
+    <p>獨家基因檢測、全方位 AI 數據，加上一支真正在乎你的專業團隊。該做什麼，由團隊判斷——你只要把健康交給我們，把時間留給真正重要的事。</p>
+  </div>
+  <div class="im"><img src="file:///tmp/nox/g5.jpg"></div>
+</div></section>
+
+<!-- single CLUB band, before final CTA -->
+<section class="club">
+  <img src="file:///tmp/nox/g1.jpg"><div class="sc"></div>
+  <div class="in">
+    <span class="eyebrow">ĒSEN Club</span>
+    <h2>在私人醫療團隊之外，<br>還有一群同頻的人。</h2>
+    <div class="q">「他們從不急著推銷，而是用最適合我的方式陪著我。」— Andrew Lee</div>
+    <a class="lnk" href="#">了解 ĒSEN Club →</a>
+  </div>
+</section>
+
+<!-- final CTA -->
+<section class="end"><div class="wrap">
+  <span class="eyebrow">By Application</span>
+  <h2>加入 ĒSEN，加入 the Club.</h2>
+  <a class="btn primary" href="#">申請加入 NOX</a>
+</div></section>
+
+<div class="label">v2：醫療團隊／私人照護為主軸（Care beat 提到情感核心）；社群收斂成 CTA 前的單一 band。文案示意・照片含活動賓客，上線前確認肖像權。</div>
+</body>
+</html>
