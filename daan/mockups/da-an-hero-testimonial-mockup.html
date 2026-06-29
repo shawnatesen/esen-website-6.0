@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>伊生大安診所 — Hero + Testimonial 視覺方向 Mockup（對齊 ĒSEN Design System）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ── ĒSEN Design System tokens（brand-design-system/colors_and_type.css）── */
+  :root{
+    --aura:#FFFFFF;        /* Aura White 靈光白 */
+    --grain:#E4DED2;       /* Soft Grain 柔砂米 — 暖性章節 */
+    --nox:#000000;         /* Nox Black 暗夜黑 */
+    --ebony:#3E322C;       /* Ebony Wood 古檀棕 — 淺底主文字 */
+    --ash:#4D493E;         /* Dark Ash 煙檀灰 */
+    --muted:#6A6052;       /* 次文字（暖灰）*/
+    --titanium:#9B8062;    /* Eventide Titanium 幽暮鈦 — 高級感點綴（取代金）*/
+    --ochre:#7A5038;       /* Burnt Ochre 燒赭褐 — 最強 CTA */
+    --line-d:rgba(255,255,255,.18);  /* aura-white-15 on dark */
+    --line-l:rgba(62,50,44,.15);     /* nox-black-15 on light */
+    /* 字型：中文為主，較大較重；英文為輔。Latin display=LL Kleisch、body=Neue Haas Unica（皆需授權，正式上線替換）*/
+    --serif:"Noto Serif TC","LL Kleisch",serif;
+    --sans:"Noto Sans TC","Neue Haas Unica",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);color:var(--ebony);background:var(--aura);-webkit-font-smoothing:antialiased;line-height:1.55;font-weight:300}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+  .eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--titanium);font-weight:500}
+
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--ochre);color:#fff;font-family:var(--sans);font-weight:400;font-size:14px;letter-spacing:.04em;padding:14px 26px;border-radius:2px;text-decoration:none;transition:opacity .18s ease-out}
+  .btn:hover{opacity:.7}
+  .btn-text{font-family:var(--sans);font-size:14px;color:var(--ebony);text-decoration:none;border-bottom:1px solid var(--ebony);padding-bottom:3px;transition:opacity .18s ease-out}
+  .btn-text:hover{opacity:.7}
+
+  .ribbon{position:fixed;top:14px;left:14px;z-index:99;background:var(--nox);color:var(--aura);font-size:11px;letter-spacing:.1em;padding:6px 12px;border-radius:2px;opacity:.85}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line-l)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-family:var(--serif);font-weight:600;font-size:24px;letter-spacing:.02em;color:var(--ebony)}
+  .nav-links{display:flex;gap:30px;align-items:center}
+  .nav-links a{font-size:14px;color:var(--ebony);text-decoration:none;opacity:.8;font-weight:400}
+
+  /* HERO ── Aura×Nox：深底＋靈光文字 */
+  .hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;color:var(--aura);overflow:hidden;background:var(--nox)}
+  .hero-bg{position:absolute;inset:0;background:url('https://cdn.prod.website-files.com/6975d25c17bd45df84813e3a/6975d25c17bd45df84814117_E%CC%84SEN%20%E4%BC%8A%E7%94%9F%E9%86%AB%E7%99%82%EF%BD%9C%E9%A0%98%E5%B0%8E%E8%80%85%E7%9A%84%E9%A0%90%E9%98%B2%E9%86%AB%E5%AD%B8%E5%9C%98%E9%9A%8A.jpg%20%5Bapng-to-avif%20output%20image%5D.avif') center/cover no-repeat;opacity:.92}
+  .hero-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.12) 100%)}
+  /* aura 圓形母題（單層線框，右上裝飾錨點）*/
+  .aura-ring{position:absolute;top:8%;right:6%;width:240px;height:240px;border:1px solid rgba(155,128,98,.45);border-radius:50%}
+  .aura-ring::after{content:"";position:absolute;inset:26px;border:1px solid rgba(255,255,255,.14);border-radius:50%}
+  .hero-inner{position:relative;padding-bottom:72px;max-width:680px}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(34px,5vw,58px);line-height:1.18;margin:18px 0 20px;letter-spacing:-.01em}
+  .hero p{font-size:16px;line-height:1.8;color:rgba(255,255,255,.88);max-width:560px;margin-bottom:32px;font-weight:300}
+  .hero .eyebrow{color:var(--titanium)}
+  .hero-cta{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+  .hero-cta .btn-text{color:#fff;border-color:rgba(255,255,255,.6)}
+
+  /* STATS bar ── Aura 白底，數字以字體分量強調，點綴鈦色 */
+  .stats{background:var(--aura);border-bottom:1px solid var(--line-l)}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:48px 0}
+  .stat{text-align:center;border-right:1px solid var(--line-l)}
+  .stat:last-child{border-right:none}
+  .stat .num{font-family:var(--serif);font-weight:600;font-size:50px;line-height:1;color:var(--ebony)}
+  .stat .num small{font-size:22px;color:var(--titanium)}
+  .stat .lab{font-size:13px;color:var(--muted);margin-top:12px;letter-spacing:.04em}
+  @media(max-width:720px){.stats-grid{grid-template-columns:repeat(2,1fr);gap:32px 16px}.stat:nth-child(2){border-right:none}.nav-links a:not(.btn){display:none}}
+
+  /* TESTIMONIAL ── Warm：Soft Grain 底，Ebony 文字 */
+  .tst{background:var(--grain);padding:96px 0;color:var(--ebony)}
+  .tst-head{text-align:center;max-width:640px;margin:0 auto 56px}
+  .tst-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3.6vw,40px);line-height:1.3;margin:14px 0 12px;letter-spacing:-.01em}
+  .tst-head p{color:var(--muted);font-size:15px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  @media(max-width:900px){.cards{grid-template-columns:1fr;max-width:480px;margin:0 auto}}
+  /* 卡片：邊框優先、無陰影、小圓角 */
+  .card{background:var(--aura);border:1px solid var(--line-l);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+  .card-img{height:172px;background-size:cover;background-position:center}
+  .card-body{padding:26px 26px 22px;display:flex;flex-direction:column;flex:1}
+  .quote-mark{font-family:var(--serif);font-size:60px;line-height:.5;color:var(--titanium);height:28px}
+  .card-quote{font-family:var(--serif);font-size:16px;line-height:1.85;color:var(--ebony);margin:8px 0 22px;flex:1;font-weight:400}
+  .card-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line-l);padding-top:16px}
+  .who .handle{font-weight:700;font-size:14.5px}
+  .who .role{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .ig{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--ochre);text-decoration:none;border:1px solid var(--ochre);border-radius:999px;padding:5px 12px;white-space:nowrap;transition:opacity .18s ease-out}
+  .ig:hover{opacity:.7}
+
+  /* CLOSING ── Nox 深底收尾 */
+  .close{position:relative;background:var(--nox);color:var(--aura);text-align:center;padding:104px 0;overflow:hidden}
+  .close .aura-ring{top:50%;left:50%;transform:translate(-50%,-50%);width:380px;height:380px;border-color:rgba(255,255,255,.1)}
+  .close .aura-ring::after{border-color:rgba(155,128,98,.3)}
+  .close .inner{position:relative}
+  .close h2{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.8vw,42px);line-height:1.35;margin:16px 0 30px}
+  .close .eyebrow{color:var(--titanium)}
+
+  .note{background:var(--aura);border-top:1px solid var(--line-l);padding:28px 0;font-size:13px;color:var(--muted);line-height:1.7}
+  .note b{color:var(--ebony)}
+</style>
+</head>
+<body>
+<div class="ribbon">方向 MOCKUP · 已對齊 ĒSEN Design System · 文案示意</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">ĒSEN</div>
+    <nav class="nav-links">
+      <a href="#">關於我們</a>
+      <a href="#">主治項目</a>
+      <a href="#">照護團隊</a>
+      <a class="btn" href="#">立即預約初診</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-scrim"></div>
+  <div class="aura-ring"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">伊生大安診所 · ĒSEN Daan</span>
+    <h1>現代生活，<br>正在你身上累積。</h1>
+    <p>三高、代謝、睡眠、情緒、荷爾蒙失衡——這些不是各自獨立的病，而是生活長期的累積。伊生大安院區以預防醫學為核心，為忙碌的你提供長期信任的家醫級照護。</p>
+    <div class="hero-cta">
+      <a class="btn" href="#">立即預約初診</a>
+      <a class="btn-text" href="#">查看主治項目</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS / trust bar -->
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><div class="num">4.8<small>★</small></div><div class="lab">Google 評分</div></div>
+    <div class="stat"><div class="num">272</div><div class="lab">則真實評論</div></div>
+    <div class="stat"><div class="num">30<small>分</small></div><div class="lab">初診深度問診</div></div>
+    <div class="stat"><div class="num">2</div><div class="lab">院區服務據點</div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL (redesigned) -->
+<section class="tst">
+  <div class="wrap">
+    <div class="tst-head">
+      <span class="eyebrow">照護對象的話 · As seen with ĒSEN</span>
+      <h2>他們，把健康交給我們。</h2>
+      <p>真實會員的分享——點開卡片，看他們在 Instagram 上怎麼說。</p>
+    </div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img" style="background-image:url('https://cdn.prod.website-files.com/6975d25c17bd45df84813e15/6975d25c17bd45df84813eff_%E4%BC%8A%E7%94%9F%E8%A8%BA%E6%89%80%EF%BD%9C%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE%20Services%EF%BD%9C%E4%B8%80%E7%AB%99%E5%BC%8F%E5%81%A5%E6%AA%A2%EF%BC%8E%E7%87%9F%E9%A4%8A%E9%BB%9E%E6%BB%B4%EF%BC%8E%E9%9D%9C%E8%84%88%E9%9B%B7%E5%B0%84%EF%BC%8E%E5%A2%9E%E7%94%9F%E7%99%82%E6%B3%95%20(2).avif')"></div>
+        <div class="card-body">
+          <div class="quote-mark">「</div>
+          <p class="card-quote">鄒醫師會先從頭到尾了解你的問題和生活作息，從身到心都了解到，這樣才能找到根本問題並改善，那種感覺讓人很舒服。</p>
+          <div class="card-foot">
+            <div class="who"><div class="handle">@benwoooo</div><div class="role">知名旅遊 YouTuber</div></div>
+            <a class="ig" href="https://www.instagram.com/benwoooo" target="_blank">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img" style="background-image:url('https://cdn.prod.website-files.com/6975d25c17bd45df84813e15/6975d25c17bd45df84813efe_%E4%BC%8A%E7%94%9F%E8%A8%BA%E6%89%80%EF%BD%9C%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE%20Services%EF%BD%9C%E4%B8%80%E7%AB%99%E5%BC%8F%E5%81%A5%E6%AA%A2%EF%BC%8E%E7%87%9F%E9%A4%8A%E9%BB%9E%E6%BB%B4%EF%BC%8E%E9%9D%9C%E8%84%88%E9%9B%B7%E5%B0%84%EF%BC%8E%E5%A2%9E%E7%94%9F%E7%99%82%E6%B3%95.avif')"></div>
+        <div class="card-body">
+          <div class="quote-mark">「</div>
+          <p class="card-quote">每週在歐洲美洲飛來飛去，時差加上蔬果攝取不足。回台灣我都來伊生補充營養點滴，因為是認識的診所，所以很安心。</p>
+          <div class="card-foot">
+            <div class="who"><div class="handle">@evelynychang</div><div class="role">天然保養品牌主理人</div></div>
+            <a class="ig" href="https://www.instagram.com/evelynychang" target="_blank">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-img" style="background-image:url('https://cdn.prod.website-files.com/6975d25c17bd45df84813e15/6975d25c17bd45df84813f00_%E4%BC%8A%E7%94%9F%E8%A8%BA%E6%89%80%EF%BD%9C%E6%9C%8D%E5%8B%99%E9%A0%85%E7%9B%AE%20Services%EF%BD%9C%E4%B8%80%E7%AB%99%E5%BC%8F%E5%81%A5%E6%AA%A2%EF%BC%8E%E7%87%9F%E9%A4%8A%E9%BB%9E%E6%BB%B4%EF%BC%8E%E9%9D%9C%E8%84%88%E9%9B%B7%E5%B0%84%EF%BC%8E%E5%A2%9E%E7%94%9F%E7%99%82%E6%B3%95%20(3).avif')"></div>
+        <div class="card-body">
+          <div class="quote-mark">「</div>
+          <p class="card-quote">ĒSEN 很不一樣的地方是，只要不是急性需求，醫生並不鼓勵吃藥，而是用一段時間的飲食調整去改善。對不愛吃藥的人，心理輕鬆很多。</p>
+          <div class="card-foot">
+            <div class="who"><div class="handle">@song.kiki</div><div class="role">新創圈主持人</div></div>
+            <a class="ig" href="https://www.instagram.com/song.kiki" target="_blank">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING dark CTA -->
+<section class="close">
+  <div class="aura-ring"></div>
+  <div class="wrap inner">
+    <span class="eyebrow">Ready when you are</span>
+    <h2>準備好，從找出原因開始。</h2>
+    <a class="btn" href="#">立即預約初診</a>
+  </div>
+</section>
+
+<div class="note">
+  <div class="wrap">
+    <b>視覺方向 mockup，已對齊 ĒSEN Design System，非最終稿。</b>
+    用色：Aura White／Soft Grain／Nox Black ＋ 唯一強調色 Burnt Ochre（CTA）與 Eventide Titanium（數字/eyebrow）。<b>已移除紅色</b>（品牌規範禁用 green/red 語意色）。字型：標題 Noto Serif TC、內文 Noto Sans TC（中文為主、較大較重）；Latin 的 LL Kleisch／Neue Haas Unica 需授權，正式上線替換。元素：aura 圓形母題、邊框優先無陰影、CTA 圓角 2px、hover 用 opacity 0.7。文案為示意，請以正式文案為準。
+  </div>
+</div>
+
+</body>
+</html>

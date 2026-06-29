@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大安 SERVICES 段落 — 線框</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#F5F3EF;--ink:#2A2521;--muted:#7A7166;--line:#C9BFB0;--ochre:#7A5038;--titanium:#9B8062;--box:#FFFFFF;--dark:#2A2521;--mono:"SF Mono",ui-monospace,Menlo,monospace;--sans:"Noto Sans TC",system-ui,sans-serif;--serif:"Noto Serif TC",serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 50px}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+  .top{padding:34px 0 4px}.top h1{font-size:22px;font-weight:700}.top p{font-size:13px;color:var(--muted);margin-top:5px}
+  .phead{display:flex;align-items:center;gap:12px;background:var(--dark);color:#fff;border-radius:6px;padding:12px 18px;margin-top:26px}
+  .phead .n{font-family:var(--mono);font-size:11px;color:var(--titanium)}.phead h2{font-size:15px;font-weight:700}.phead .o{font-size:11px;color:rgba(255,255,255,.6);margin-left:auto}
+  .box{background:#fff;border:1px dashed var(--line);border-radius:8px;padding:22px;margin-top:12px}
+  .eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--titanium)}
+  .big{font-family:var(--serif);font-size:26px;font-weight:600;margin:8px 0 4px}
+  .ochre{color:var(--ochre)}
+  /* process steps */
+  .steps{display:flex;align-items:stretch;gap:0;margin-top:18px}
+  .step{flex:1;text-align:center;padding:0 14px;position:relative}
+  .step:not(:last-child)::after{content:"→";position:absolute;right:-9px;top:30px;color:var(--titanium);font-size:18px}
+  .dot{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--titanium);color:var(--titanium);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-family:var(--mono)}
+  .step h4{font-family:var(--serif);font-size:17px;font-weight:600;margin-bottom:5px}
+  .step p{font-size:12.5px;color:var(--muted);line-height:1.6}
+  .step .ai{display:inline-block;font-family:var(--mono);font-size:9.5px;color:var(--ochre);border:1px solid var(--ochre);border-radius:3px;padding:1px 5px;margin-top:6px}
+  .photo{background:repeating-linear-gradient(45deg,#ece6da,#ece6da 9px,#f3efe6 9px,#f3efe6 18px);border-radius:6px;height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:var(--mono);font-size:11px;margin-top:18px}
+  /* 3-col overview */
+  .cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:14px}
+  .col{background:#fff;border:1px dashed var(--line);border-radius:8px;padding:20px}
+  .col .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--titanium)}
+  .col h3{font-family:var(--serif);font-size:20px;font-weight:600;margin:4px 0 12px}
+  .col ul{list-style:none;font-size:14px;line-height:2}
+  .col li{border-bottom:1px solid #eee7da;padding:1px 0}
+  .col .all{font-family:var(--mono);font-size:11.5px;color:var(--ochre);margin-top:12px;display:inline-block}
+  .band{background:var(--dark);color:#fff;border-radius:8px;padding:20px 24px;margin-top:12px;display:flex;gap:30px;align-items:center}
+  .band .bx{flex:1}.band .bk{font-family:var(--mono);font-size:10px;color:var(--titanium);letter-spacing:.12em}.band .bt{font-family:var(--serif);font-size:17px;font-weight:600;margin-top:3px}.band .bp{font-size:12px;color:rgba(255,255,255,.6);margin-top:3px}
+  .note{font-size:12px;color:var(--muted);font-style:italic;margin:8px 2px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><h1>大安 SERVICES 段落 — 建議結構（線框）</h1><p>原則：大氣、可掃讀、看得到具體服務、又不複雜。深度留給 /service 頁。</p></div>
+
+  <!-- A -->
+  <div class="phead"><span class="n">區塊 A</span><h2>大場面：3-Step Process（差異化＋AI-native）</h2><span class="o">連線視覺＋真實診間照</span></div>
+  <div class="box">
+    <div class="eyebrow">HOW WE WORK · ĒSEN 的方法</div>
+    <div class="big">一般診所看症狀。<span class="ochre">我們找原因。</span></div>
+    <div class="steps">
+      <div class="step"><div class="dot">1</div><h4>精準基因檢測</h4><p>從 DNA 讀懂你的先天體質</p></div>
+      <div class="step"><div class="dot">2</div><h4>AI 健康數據</h4><p>全年數據累積成你的健康檔案，AI 找出趨勢</p><span class="ai">AI-NATIVE 主軸</span></div>
+      <div class="step"><div class="dot">3</div><h4>溫暖專業陪伴</h4><p>私人醫療團隊長期陪你執行</p></div>
+    </div>
+    <div class="photo">真實診間照（橫幅）</div>
+  </div>
+  <div class="note">＝這頁的「大場面」。「找原因」「AI 健康數據」用行動色／標籤點出 AI-native。</div>
+
+  <!-- B -->
+  <div class="phead"><span class="n">區塊 B</span><h2>「在大安，你可以…」三欄大氣總覽</h2><span class="o">具體服務名看得到＋see all 連深頁</span></div>
+  <div class="cols">
+    <div class="col"><div class="k">SCREEN</div><h3>檢測</h3>
+      <ul><li>ĒSEN 360° 基因檢測</li><li>ĒSEN Assess 全年精準檢測</li><li>過敏原檢測</li><li>男／女賀爾蒙檢測</li><li>代謝營養素檢測</li></ul>
+      <span class="all">查看所有檢測 → /service/screen</span></div>
+    <div class="col"><div class="k">TREATMENT</div><h3>療程</h3>
+      <ul><li>ĒSEN BOOST 營養點滴</li><li>ĒSEN PACK 個人化營養品</li><li>PRP 增生療法</li><li>ILIB 靜脈雷射</li><li>血液淨化</li></ul>
+      <span class="all">查看所有療程 → /service/treatment</span></div>
+    <div class="col"><div class="k">WELLNESS</div><h3>追蹤</h3>
+      <ul><li>ĒSEN CARE 全年健康管理</li><li>生活醫學諮詢（營養師）</li><li>生活醫學諮詢（心理師）</li><li>健康數據追蹤</li><li>季度回診</li></ul>
+      <span class="all">查看陪伴方式 → /service/wellness</span></div>
+  </div>
+  <div class="note">大字標題＋名稱條列＋大量留白＝大氣但不雜亂。每欄只放 4–6 個招牌項目，其餘交給 see all。</div>
+
+  <!-- C -->
+  <div class="phead"><span class="n">區塊 C</span><h2>加分輕量帶</h2><span class="o">不搶主戲</span></div>
+  <div class="band">
+    <div class="bx"><div class="bk">COMMUNITY</div><div class="bt">ĒSEN Club</div><div class="bp">更深的社群與長期陪伴 → /nox</div></div>
+    <div class="bx"><div class="bk">CONTENT</div><div class="bt">ĒSEN Magazine</div><div class="bp">醫學新知與生活提案 → /blog</div></div>
+  </div>
+</div>
+</body>
+</html>
