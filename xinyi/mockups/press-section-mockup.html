@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>信義 · PRESS / 媒體報導 — wireframe</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--aura:#FFFFFF;--grain:#F3EFE7;--ink:#2A2521;--muted:#7A7166;--line:rgba(62,50,44,.16);--titanium:#9B8062;--serif:"Noto Serif TC",serif;--sans:"Noto Sans TC",system-ui,sans-serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:var(--aura);color:var(--ink);font-weight:300;-webkit-font-smoothing:antialiased}
+  .sec{max-width:1160px;margin:0 auto;padding:108px 48px}
+  .eyebrow{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--titanium);font-weight:500;text-align:center;display:block}
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3.8vw,42px);line-height:1.2;text-align:center;margin:14px 0 8px}
+  .sub{text-align:center;color:var(--muted);font-size:14.5px;margin-bottom:62px}
+
+  .row{display:grid;grid-template-columns:repeat(4,1fr)}
+  .col{padding:6px 34px;position:relative}
+  .col + .col::before{content:"";position:absolute;left:0;top:4px;bottom:4px;width:1px;background:var(--line)}
+  .media{font-family:var(--serif);font-size:18px;font-weight:600;letter-spacing:.02em;margin-bottom:18px}
+  .quote{font-size:15px;line-height:1.85;color:#4d473f}
+  .quote::before{content:"“";color:var(--titanium);font-family:var(--serif);font-size:22px;margin-right:2px;vertical-align:-2px}
+  .ph{color:#b3a99a;font-style:italic}
+  .link{display:inline-block;margin-top:20px;font-size:12.5px;letter-spacing:.04em;color:var(--titanium);border-bottom:1px solid var(--titanium);padding-bottom:2px;text-decoration:none}
+  .tag{display:inline-block;margin-top:14px;font-size:10.5px;letter-spacing:.08em;color:var(--muted);border:1px solid var(--line);border-radius:2px;padding:3px 8px}
+
+  .note{margin-top:64px;border-top:1px solid var(--line);padding-top:22px;font-size:12.5px;color:var(--muted);line-height:1.9}
+  .note b{color:var(--ink)}
+  .ribbon{position:fixed;top:12px;left:12px;background:#111;color:#fff;font-size:11px;padding:5px 11px;border-radius:2px;z-index:9;opacity:.9}
+  @media(max-width:860px){.row{grid-template-columns:1fr 1fr;gap:40px 0}.col+.col::before{display:none}}
+</style>
+</head>
+<body>
+<div class="ribbon">信義 · PRESS 媒體報導 — wireframe（媒體背書橫幅，非整篇文章）</div>
+<section class="sec">
+  <span class="eyebrow">Press · 媒體報導</span>
+  <h2>媒體，這樣看 ĒSEN。</h2>
+  <p class="sub">四家媒體的報導節錄 — logo／名稱 ＋ 一句引言 ＋ 連到原文。</p>
+
+  <div class="row">
+    <div class="col">
+      <div class="media">Tatler Beauty</div>
+      <div class="quote">這些設施僅提供會員使用，不對外開放。</div>
+      <a class="link" href="#">閱讀報導 →</a>
+      <div class="tag">第三方引言・照原文</div>
+    </div>
+    <div class="col">
+      <div class="media">Vogue</div>
+      <div class="quote ph">（此處放該篇報導節錄的一句，照媒體原文）</div>
+      <a class="link" href="#">閱讀報導 →</a>
+    </div>
+    <div class="col">
+      <div class="media">女人我最大</div>
+      <div class="quote ph">（此處放該篇報導節錄的一句，照媒體原文）</div>
+      <a class="link" href="#">閱讀報導 →</a>
+    </div>
+    <div class="col">
+      <div class="media">民眾電子報</div>
+      <div class="quote ph">（此處放該篇報導節錄的一句，照媒體原文）</div>
+      <a class="link" href="#">閱讀報導 →</a>
+    </div>
+  </div>
+
+  <p class="note">
+    <b>這段＝媒體背書橫幅，不是整篇文章。</b> 每欄只放：媒體名稱／logo ＋ 一句節錄引言（照媒體原文、不改寫）＋ 連到原文的連結。<br>
+    <b>⚠️ 合規：</b>Tatler 那句「僅提供會員使用，不對外開放」當<b>媒體引言</b>呈現 OK（第三方陳述）；<b>不要</b>把它抽出來放大成 ĒSEN 自己的標語／招牌句（自己宣稱排他＝排他招徠，違反《醫療法》）。<br>
+    版型：Aura 白底、欄間 1px hairline、無卡片框無陰影；媒體名 serif、引言 sans、連結 Titanium。Logo 若有授權可換成圖檔。
+  </p>
+</section>
+</body>
+</html>
