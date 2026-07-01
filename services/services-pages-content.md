@@ -1,7 +1,12 @@
 # ĒSEN Services 三頁內容規劃（檢測 · 調養 · 追蹤）
 
-對象頁面：`…/service/screen`（檢測）｜`…/service/treatment`（調養）｜`…/service/wellness`（追蹤）
-狀態：draft（文案人味待校）。本文件＝完整服務盤點＋分類＋品牌語氣＋給設計師的版型結構。
+> ⚠️ **此為早期規劃盤點，已被下列兩份取代（請以那兩份為準）：**
+> - 架構／CMS／版型 → [`services-structural-handoff.md`](./services-structural-handoff.md)
+> - 定稿文案（brand-voice pass）→ [`services-copy-final.md`](./services-copy-final.md)
+> 本檔僅保留作服務盤點備查；其中的舊 CTA、Thrive 命名、療效描述、自律神經重複項皆已在新檔修正。
+
+對象頁面：`…/service/screen`（檢測）｜`…/service/treatment`（調養）｜`…/service/live-track`（追蹤）
+狀態：**superseded**（見上）。
 
 ---
 
